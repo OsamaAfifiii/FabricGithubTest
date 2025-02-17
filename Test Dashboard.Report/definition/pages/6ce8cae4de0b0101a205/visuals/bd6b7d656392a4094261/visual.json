@@ -1,38 +1,18 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
-  "name": "eed7ce2436cd9af165a4",
+  "name": "bd6b7d656392a4094261",
   "position": {
     "x": 0,
-    "y": 359.71896955503513,
+    "y": 343.73926619828262,
     "z": 1,
-    "height": 334.73848555815772,
-    "width": 1280,
-    "tabOrder": 1
+    "height": 333.73926619828262,
+    "width": 1280
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "card",
     "query": {
       "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Sheet1"
-                    }
-                  },
-                  "Property": "DoctorName"
-                }
-              },
-              "queryRef": "Sheet1.DoctorName",
-              "nativeQueryRef": "DoctorName",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -44,14 +24,14 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "DoctorNumber"
+                      "Property": "InvoiceDayOn"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(Sheet1.DoctorNumber)",
-              "nativeQueryRef": "Sum of DoctorNumber"
+              "queryRef": "Sum(Sheet1.InvoiceDayOn)",
+              "nativeQueryRef": "Sum of InvoiceDayOn"
             }
           ]
         }
@@ -68,7 +48,7 @@
                         "Entity": "Sheet1"
                       }
                     },
-                    "Property": "DoctorNumber"
+                    "Property": "InvoiceDayOn"
                   }
                 },
                 "Function": 0
