@@ -1,9 +1,0 @@
-EVALUATE
-FILTER(
-            SUMMARIZE(
-                'Dim Business Line',
-                'Dim Business Line'[Sub Business Line Dashboard Name],
-                "Value", [SRC_$_Net Revenue]
-            ),
-            'Dim Business Line'[Sub Business Line Dashboard Name] <> BLANK()
-        ), [Value]
