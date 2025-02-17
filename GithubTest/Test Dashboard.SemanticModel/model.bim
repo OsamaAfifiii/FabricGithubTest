@@ -1,0 +1,295 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Sheet1\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Sheet1",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "InoviceYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6f82567b-cceb-45ee-9e0b-f308aa330a79",
+            "sourceColumn": "InoviceYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "InvoiceMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9aaeef02-4aac-4edf-924b-964c05ab6eb6",
+            "sourceColumn": "InvoiceMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "InvoiceDayOn",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fd51c4dd-ab4e-4c2a-bd35-3cfa1d3c8ed7",
+            "sourceColumn": "InvoiceDayOn",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "PolyclinicName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "49e9dae0-870c-42f2-9a65-38e0e4c5105d",
+            "sourceColumn": "PolyclinicName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DoctorNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f6bd9232-5e6c-4ee0-b766-310432be441f",
+            "sourceColumn": "DoctorNumber",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DoctorName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9bb0474e-e4e1-4939-8c1c-ad541c557aa9",
+            "sourceColumn": "DoctorName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClinicName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8eea6df3-433d-405e-9a92-787199f871e8",
+            "sourceColumn": "ClinicName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CashRevenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7723a04d-e438-4469-bbe6-6095898d1c48",
+            "sourceColumn": "CashRevenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CashPatientNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f811e01b-fdaa-49cc-8538-1ddc9e59a748",
+            "sourceColumn": "CashPatientNumber",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CreditRevenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "437361b9-c8df-4d01-99ac-74186ca6c928",
+            "sourceColumn": "CreditRevenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Credit PatientNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c4b72958-8fed-4a3f-b284-3d3cb1c2093c",
+            "sourceColumn": "Credit PatientNumber",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TotalRevenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f759ff15-2dcc-4759-a3d4-af10cd791898",
+            "sourceColumn": "TotalRevenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TotalPatientNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f5a6841f-a7e1-47c3-8f33-0972b02d7d40",
+            "sourceColumn": "TotalPatientNumber",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "BusinessUnite",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "159a33ea-5532-4478-889d-62aa2aabb498",
+            "sourceColumn": "BusinessUnite",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e52d5a93-6206-4d8b-aeae-1c4a3aa618bb",
+            "sourceColumn": "WD",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "55378d76-626a-4ae1-9be5-039e68d4186f",
+        "partitions": [
+          {
+            "name": "Sheet1",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\OsamaAfifi\\Downloads\\TeamRevenueBudget.xlsx\"), null, true),",
+                "    Sheet1_Sheet = Source{[Item=\"Sheet1\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"InoviceYear\", type text}, {\"InvoiceMonth\", type text}, {\"InvoiceDayOn\", Int64.Type}, {\"PolyclinicName\", type text}, {\"DoctorNumber\", Int64.Type}, {\"DoctorName\", type text}, {\"ClinicName\", type text}, {\"CashRevenue\", type number}, {\"CashPatientNumber\", type number}, {\"CreditRevenue\", type number}, {\"Credit PatientNumber\", type number}, {\"TotalRevenue\", type number}, {\"TotalPatientNumber\", type number}, {\"BusinessUnite\", type text}, {\"WD\", type any}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
