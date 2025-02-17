@@ -1,0 +1,46 @@
+EVALUATE
+
+VAR _start = MIN('Date'[BK DATE])
+VAR _end = MAX('Last Refresh Date'[Date Last Refreshed])
+VAR Selected_Month = MAX('Date'[BK DATE])
+VAR Current_Period = MAX('Last Refresh Date'[Date Last Refreshed])
+var _DateEnd=
+    if (
+        ISFILTERED('Date'),
+        DAte(
+        YEAR(Selected_Month),
+            EOMONTH(Selected_Month,0),
+            day(Selected_Month)
+        )
+        ,
+
+         DATE(
+            YEAR(Current_Period),
+            MONTH(Current_Period),
+            day(Current_Period)
+        )
+        )
+var _Datestart=
+    if (
+        ISFILTERED('Date'),
+        DATE(
+            YEAR(_start),
+            MONTH(_start),
+            01
+        )
+        ,
+        DATE(
+            YEAR(_end),
+            MONTH(_end),
+            01
+        )
+)
+
+RETURN
+SWITCH(
+    TRUE(),
+  _Datestart >= _start && _DateEnd <= _end, 1,
+    0
+)
+
+
